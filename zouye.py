@@ -1,6 +1,6 @@
 #homework(1)
 import urllib.request
-import urllib.request
+import urllib.parse
 x=input('请输入x：')
 def f(x):
     x+1
@@ -13,9 +13,10 @@ HTML = response.read().decode('utf8')
 print(HTML)
 #homework2:
 import urllib.request
-import urllib.request
-
-data = bytes(urllib.parse.urlencode({'wd':'央视'}),enconding='utf8')
+import urllib.parse
+def function_name(parameters):
+    data
+data = bytes(urllib.parse.urlencode({'wd':'央视'}),encoding='utf8')
 url = 'http://www.cctv.com/post'
 response = urllib.request.urlopen(url,data=data)
 result = response.read().decode('utf8')
